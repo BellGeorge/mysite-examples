@@ -30,7 +30,7 @@ puts lutdatabase
 ##################
 # FACEBOOK ACCESS
 ##################
-config = YAML::load(File.open("#{RAILS_ROOT}/config/facebook.yml"));
+config = YAML::load(File.open( Rails.root.join("/config/facebook.yml")));
 gscc_app = FbGraph::Application.new(config['production']['app_id']);
 access_token = gscc_app.get_access_token(config['production']['client_secret']);
 page_id = config['production']['page_id'];

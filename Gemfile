@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -31,10 +31,11 @@ gem 'fb_graph'
 #   gem 'webrat'
 # end
 
+gem 'prototype-rails'
 group :production do
   gem 'pg'
 end
 group :development, :test do
-  #gem 'sqlite3'
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'sqlite3'
 end
+gem 'jquery-rails'
